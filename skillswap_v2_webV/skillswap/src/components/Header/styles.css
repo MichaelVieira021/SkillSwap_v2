@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'fontSkillSwap';
+    src: url('../../assets/fonts/DevilCandle.otf');
+  }
+
+#containerNavBar {
+    width: 100%;
+    height: 85px;
+    background-color: rgb(27, 20, 39);
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    box-shadow: 0px 2px 23px rgb(71, 71, 71);
+    position: absolute;
+    top: 0;
+}
+
+#containerLogoeNome{
+    display: flex;
+    align-items: center;
+    cursor: pointer
+}
+
+#containerLogoeNome div{
+    width: 83px;
+    height: 83px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#containerLogoeNome div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+#containerLogoeNome p{
+    color: white;
+    font-size: 44px;
+    font-weight: 400; 
+    letter-spacing: -1px;
+    font-family: fontSkillSwap;
+}
+
+#containerNavBar nav{
+    font-size: 1.4rem;
+    list-style: none;
+    color: white;
+}
+
+#containerNavBar nav ul{
+    display: flex;
+}
+
+#containerNavBar nav ul li{
+    list-style: none;
+    margin-right: 10px;
+    padding: 6px;
+    cursor: pointer
+}
+
+@media (max-width: 406px){
+    #containerLogoeNome div{
+        display: none;
+    }
+
+    #containerLogoeNome{
+        margin-left: 20px;
+    }
+}
